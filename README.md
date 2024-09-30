@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EthExplorer
 
-## Getting Started
+A React-based Ethereum blockchain explorer that provides real-time data about the Ethereum network. EthExplorer utilizes **Web3.js** for blockchain interaction and **Material UI** for a responsive and user-friendly UI.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Real-Time Ethereum Data**: Displays the latest block number, finalized block, transaction details, gas price, and more.
+- **Interactive UI**: Built with Material UI, providing an intuitive way to navigate Ethereum data.
+- **Auto Refresh**: Updates blockchain data every 15 seconds to keep information up-to-date.
+- **Detailed Block and Transaction Info**: See recent blocks and transactions, including their hashes, miner addresses, and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Check out the live demo to see the application in action: [EthExplorer Demo](https://eth-explorer-dqig.vercel.app/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Alt text for the image](https://github.com/user-attachments/assets/402199ba-01f2-4465-bfbc-88f121f6196f)
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+To run EthExplorer locally, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js (>=14)
+- npm or yarn
+- Infura API key for connecting to the Ethereum mainnet
 
-## Deploy on Vercel
+### Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/eth-explorer.git
+   ```
+2. **Navigate to the project directory**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cd eth-explorer
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+   or, if you use yarn:
+
+   ```bash
+   yarn install
+   ```
+
+4. **Set up environment variables**:
+
+   Create a `.env.local` file in the project root with the following content:
+
+   ```plaintext
+   NEXT_PUBLIC_INFURA_API_KEY=your_infura_api_key_here
+   ```
+
+5. **Run the application**:
+
+   ```bash
+   npm run dev
+   ```
+
+   or, if you use yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+6. **Access the app**:
+
+   Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- The dashboard will display key metrics like Ether price, transaction count, gas price, and recent blocks and transactions.
+- Click on individual blocks or transactions for more details.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Web3.js**: To interact with the Ethereum blockchain.
+- **Axios**: To fetch cryptocurrency data from third-party APIs.
+- **Material UI**: For consistent and responsive UI components.
+
+## Contact
+
+For questions or suggestions, please contact me at [domo01240@gmail.com].
+
+---
+
+Happy Exploring!
