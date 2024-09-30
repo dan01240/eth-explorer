@@ -41,6 +41,7 @@ interface Transaction {
   transactionIndex?: number;
   to?: string;
   value?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
@@ -50,6 +51,7 @@ interface Block {
   timestamp: number;
   miner: string;
   transactions: (string | Transaction)[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
