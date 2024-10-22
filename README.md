@@ -1,6 +1,7 @@
 # EthExplorer
 
 A React-based Ethereum blockchain explorer that provides real-time data about the Ethereum network. EthExplorer utilizes **Web3.js** for blockchain interaction and **Material UI** for a responsive and user-friendly UI.
+a responsive and user-friendly UI.
 
 ## Features
 
